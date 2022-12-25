@@ -1,1 +1,14 @@
-/* styles go here */
+.fieldPersonalInfo,
+.fieldRegistration,
+.fieldFacts,
+.fieldAddInfo {
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.lastSetForm {
+  margin-bottom: 0;
+}
