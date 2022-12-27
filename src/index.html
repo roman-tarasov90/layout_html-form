@@ -17,89 +17,80 @@
   </head>
   <body class="body">
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="fieldPersonalInfo">
-        <legend class="legend">Personal information</legend>
-        <div class="field">
-          <label>
-            Surname:
-            <input type="text" name="surname"
-              autocomplete="off"
-            >
-          </label>
-        </div>
+      <fieldset class="fieldSet">
+        <legend>Personal information</legend>
+        <label class="field">
+        Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
+          >
+        </label>
 
-        <div class="field">
-          <label>
-            Name:
-            <input type="text"
-              name="name"
-              minlength="4"
-              maxlength="15"
-              autocomplete="off"
-            >
-          </label>
-        </div>
+        <label class="field">
+          Name:
+          <input
+            type="text"
+            name="name"
+            minlength="4"
+            maxlength="15"
+            autocomplete="off"
+          >
+        </label>
 
-        <div class="field">
-          <label>
-            How old are You?
-            <input type="number"
-              name="age"
-              min="1"
-              max="100"
-              value="12"
-            >
-          </label>
-        </div>
+        <label class="field">
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
 
-        <div class="field">
-          <label>
-            Full date of birth:
-            <input type="date" name="dateOfBirth">
-          </label>
-        </div>
+        <label class="field">
+          Full date of birth:
+          <input type="date" name="dateOfBirth">
+        </label>
 
-        <div class="lastSetForm">
-          <label>
-            I accept the term of the agreement
-            <input type="checkbox"
-              name="termAgr"
-              required
-            >
-          </label>
-        </div>
+        <label class="field">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            ame="termAgr"
+            required
+          >
+        </label>
       </fieldset>
 
-
-      <fieldset class="fieldRegistration">
+      <fieldset class="fieldSet">
         <legend>Registration</legend>
-        <div class="field">
-          <label>
-            E-mail:
-            <input
-              type="email"
-              name="email"
-              placeholder="email@example.com"
-              autocomplete="off"
-            >
-          </label>
-        </div>
+        <label class="field">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            autocomplete="off"
+          >
+        </label>
 
-        <div class="lastSetForm">
-          <label>
-            Password:
-            <input type="password" name="password"
-              autocomplete="off"
-            >
-          </label>
-        </div>
+        <label class="field">
+          Password:
+          <input
+            type="password"
+            name="password"
+            autocomplete="off"
+          >
+        </label>
       </fieldset>
 
-
-      <fieldset class="fieldFacts">
+      <fieldset class="fieldSet">
         <legend>An interesting fact about you!</legend>
-        <div class="field">
-          Do you love cats:
+        <div>
+          Do you love cats?
           <label>
             <input type="radio" name="cats">
               Yes
@@ -109,67 +100,54 @@
               No
           </label>
         </div>
+        <label class="field">
+          What is your favorite color?
+          <input type="color" name="color">
+        </label>
 
-        <div class="field">
-          <label>
-            What is your favorite color?
-            <input type="color" name="color">
-          </label>
-        </div>
+        <label class="field">
+          What time do you go to bed?
+          <input type="time" name="time">
+        </label>
 
-        <div class="field">
-          <label>
-            What time do you go to bed?
-            <input type="time" name="time">
-          </label>
-        </div>
+        <label class="field">
+          What are your favorite brand of cars?
+          <select name="cars" multiple>
+            <option value="BMV">BMV</option>
+            <option value="AUDI">Audi</option>
+            <option value="LADA">Lada</option>
+          </select>
+        </label>
 
-        <div class="field">
-          <label>
-            What are your favorite brand of cars?
-            <select name="cars" multiple>
-              <option value="BMV">BMV</option>
-              <option value="AUDI">Audi</option>
-              <option value="LADA">Lada</option>
-            </select>
-          </label>
-        </div>
-
-        <div class="lastSetForm">
-          <label>
-            How do you rate our work?
-            <input type="range" name="rateOfWork"
-              min="0"
-              max="10"
-              value="5"
-            >
-          </label>
-        </div>
+        <label class="field">
+          How do you rate our work?
+          <input
+            type="range"
+            name="rateOfWork"
+            min="0"
+            max="10"
+            value="0"
+          >
+        </label>
       </fieldset>
 
-
-      <fieldset class="fieldAddInfo">
+      <fieldset class="fieldSet">
         <legend>Additional info:</legend>
-        <div class="field">
-          <label>
-            Comments:
-            <textarea
-              name="comments"
-              autocomplete="off"
-            >
-            </textarea>
-          </label>
-        </div>
+        <label class="field">
+          Comments:
+          <textarea
+            name="comments"
+            autocomplete="off"
+         ></textarea>
+        </label>
 
-        <div class="lastSetForm">
-          <label>
-            Would you recommend us?
-            <select name="recommendations">
-              <option value="Yes">yes</option>
-              <option value="No">no</option>
-            </select>
-          </label>
-        </div>
+        <label class="field">
+          Would you recommend us?
+          <select name="recommendations">
+            <option value="Yes">yes</option>
+            <option value="No">no</option>
+          </select>
+        </label>
       </fieldset>
       <button type="submit">Submit</button>
     </form>

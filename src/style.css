@@ -1,14 +1,11 @@
-.fieldPersonalInfo,
-.fieldRegistration,
-.fieldFacts,
-.fieldAddInfo {
+.field {
+  display: block;
+}
+
+.fieldSet {
   margin-bottom: 20px;
 }
 
-.field {
+.fieldSet :not(:last-child):not(:first-child) {
   margin-bottom: 10px;
-}
-
-.lastSetForm {
-  margin-bottom: 0;
 }
